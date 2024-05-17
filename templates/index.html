@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #7d8563, #c6d6c5);
+        }
+        .card {
+            display: flex;
+            width: 60%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: pink;
+        }
+        .card .green-section {
+            background-color: #3c8374;
+            color: white;
+            padding: 20px;
+            flex: 1;
+        }
+        .card .white-section {
+            background-color: white;
+            padding: 20px;
+            flex: 1;
+        }
+        .card h1 {
+            margin-top: 0;
+        }
+        .card p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .card form {
+            display: flex;
+            flex-direction: column;
+        }
+        .card form label {
+            margin-bottom: 5px;
+        }
+        .card form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .card form input[type="submit"] {
+            background-color: #3c8374;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .card form input[type="submit"]:hover {
+            background-color: #3c8374;
+        }
+        .output-text {
+            margin-top: 10px;
+        }
+        .output-text span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="green-section">
+        <h1>Emotion Predictor</h1>
+        <p>Experience the enchantment of our Emotion Predictor,</p>
+        <p>—a portal to explore and understand your emotional essence, revealing the depths of your feelings with every interaction.</p>
+    </div>
+    <div class="white-section">
+        <form action="/predict" method="post">
+            <label for="comment">Enter your comment:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            <input type="submit" value="Predict">
+        </form>
+        {% if comment_display %}
+        <p class="output-text">Your comment: <span>{{ comment_display }}</span></p>
+        {% endif %}
+        {% if prediction_text %}
+        <p class="output-text">{{ prediction_text }}</p>
+        {% endif %}
+    </div>
+</div>
+
+</body>
+</html>
