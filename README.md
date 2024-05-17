@@ -16,21 +16,35 @@ Implementasi umumnya melibatkan preprocessing teks, tokenisasi, representasi tek
 
 Berikut link datasetnya : https://www.kaggle.com/datasets/abdallahwagih/emotion-dataset/data
 
-### Cara Menjalankan Proyek
+### CARA MENJALANKAN PROYEK
 
 Ikuti langkah-langkah berikut untuk mengaktifkan lingkungan, menginstal dependensi, dan menjalankan aplikasi Flask.
 
-##### 1. Mengaktifkan Lingkungan Anaconda
-Aktifkan lingkungan yang ingin digunakan dengan perintah berikut:
+##### 1. Membuat Environment
+Pertama, buat Environment menggunakan `venv` dengan perintah berikut:
+```bash
+python -m venv namaenv
+```
+atau bisa juga membuat Environment `Conda`, buat Environment dengan perintah berikut:
+```bash
+conda create --name namaenv python=3.x
+```
+Gantilah namaenv dengan nama yang Anda inginkan untuk Environment tersebut dan 3.x dengan versi Python yang diinginkan.
+##### 2. Mengaktifkan Environment
+Aktifkan Environment dengan perintah berikut:
+```bash
+namaenv\Scripts\activate
+```
+Aktifkan Environment Conda dengan perintah berikut:
 ```bash
 conda activate namaenv
 ```
-##### 2. Menginstal Library yang Dibutuhkan
+##### 3. Menginstal Library yang Dibutuhkan
 Instal library yang dibutuhkan dari file requirements.txt dengan perintah berikut:
 ```bash
 pip install -r requirements.txt
 ```
-##### 3. Menjalankan Aplikasi Flask
+##### 4. Menjalankan Aplikasi Flask
 Untuk menjalankan aplikasi Flask, jalankan perintah berikut di terminal:
 ```bash
 python app.py
