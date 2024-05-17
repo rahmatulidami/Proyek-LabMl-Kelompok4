@@ -60,4 +60,4 @@ python app.py
   - Faiza Sabila: Code
   - Hadija Humaira : Deployment
 
-* Semua langkah-langkah pengerjaan projek ini dilakukan bersama, pembagian tugas di atas hanya formalitas.
+Semua langkah-langkah pengerjaan projek ini dilakukan bersama, pembagian tugas di atas hanya formalitas.
