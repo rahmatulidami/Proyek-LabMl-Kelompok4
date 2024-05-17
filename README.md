@@ -53,3 +53,11 @@ Untuk menjalankan aplikasi Flask, jalankan perintah berikut di terminal:
 ```bash
 python app.py
 ```
+### Pembagian Tugas
+  - Siti Nurrahmasita: Membuat Laporan dan PPT
+  - Dhaifina Alifa Putri: Code
+  - Rahmatul Idami: PPT
+  - Faiza Sabila: Code
+  - Hadija Humaira : Deployment
+
+* Semua langkah-langkah pengerjaan projek ini dilakukan bersama, pembagian tugas di atas hanya formalitas.
