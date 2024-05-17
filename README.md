@@ -16,4 +16,22 @@ Implementasi umumnya melibatkan preprocessing teks, tokenisasi, representasi tek
 
 Berikut link datasetnya : https://www.kaggle.com/datasets/abdallahwagih/emotion-dataset/data
 
-### CARA RUN CODE
+### Cara Menjalankan Proyek
+
+Ikuti langkah-langkah berikut untuk mengaktifkan lingkungan, menginstal dependensi, dan menjalankan aplikasi Flask.
+
+##### 1. Mengaktifkan Lingkungan Anaconda
+Aktifkan lingkungan yang ingin digunakan dengan perintah berikut:
+```bash
+conda activate namaenv
+```
+##### 2. Menginstal Library yang Dibutuhkan
+Instal library yang dibutuhkan dari file requirements.txt dengan perintah berikut:
+```bash
+pip install -r requirements.txt
+```
+##### 3. Menjalankan Aplikasi Flask
+Untuk menjalankan aplikasi Flask, jalankan perintah berikut di terminal:
+```bash
+python app.py
+```
