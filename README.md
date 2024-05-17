@@ -19,9 +19,13 @@ Berikut link datasetnya : https://www.kaggle.com/datasets/abdallahwagih/emotion-
 ### CARA MENJALANKAN PROYEK
 
 Ikuti langkah-langkah berikut untuk mengaktifkan lingkungan, menginstal dependensi, dan menjalankan aplikasi Flask.
-
-##### 1. Membuat Environment
-Pertama, buat Environment menggunakan `venv` dengan perintah berikut:
+##### 1. Clone Repository
+Pertama, clone repository dengan perintah berikut:
+```bash
+git clone https://github.com/rahmatulidami/Proyek-LabMl-Kelompok4
+```
+##### 2. Membuat Environment
+Kedua, buat Environment menggunakan `venv` dengan perintah berikut:
 ```bash
 python -m venv namaenv
 ```
@@ -30,7 +34,7 @@ atau bisa juga membuat Environment `Conda`, buat Environment dengan perintah ber
 conda create --name namaenv python=3.x
 ```
 Gantilah namaenv dengan nama yang Anda inginkan untuk Environment tersebut dan 3.x dengan versi Python yang diinginkan.
-##### 2. Mengaktifkan Environment
+##### 3. Mengaktifkan Environment
 Aktifkan Environment dengan perintah berikut:
 ```bash
 namaenv\Scripts\activate
@@ -39,12 +43,12 @@ Aktifkan Environment Conda dengan perintah berikut:
 ```bash
 conda activate namaenv
 ```
-##### 3. Menginstal Library yang Dibutuhkan
+##### 4. Menginstal Library yang Dibutuhkan
 Instal library yang dibutuhkan dari file requirements.txt dengan perintah berikut:
 ```bash
 pip install -r requirements.txt
 ```
-##### 4. Menjalankan Aplikasi Flask
+##### 5. Menjalankan Aplikasi Flask
 Untuk menjalankan aplikasi Flask, jalankan perintah berikut di terminal:
 ```bash
 python app.py
